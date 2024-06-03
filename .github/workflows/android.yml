@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Trigger CircleCI Build
         env:
-          CIRCLECI_TOKEN: ${{ secrets.CIRCLECI_TOKEN }}
+          CIRCLECI_TOKEN: ${{secrets.CIRCLECI_TOKEN}}
         run: |
           curl -u ${CIRCLECI_TOKEN}: \
           -d build_parameters[CIRCLE_JOB]=build \
